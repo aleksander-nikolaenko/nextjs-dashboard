@@ -1,8 +1,8 @@
-import AcmeLogo from '@/app/ui/acme-logo';
+import AcmeLogo from '@/components/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
-import { lusitana } from './ui/fonts';
+import { lusitana } from '@/components/ui/fonts';
 import Image from 'next/image';
 
 export default function Page() {
@@ -37,6 +37,7 @@ export default function Page() {
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
+            priority
           />
           <Image
             src="/hero-mobile.png"
@@ -44,6 +45,7 @@ export default function Page() {
             height={620}
             className="block md:hidden"
             alt="Screenshot of the dashboard project showing mobile version"
+            priority
           />
         </div>
       </div>
